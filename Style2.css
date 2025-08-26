@@ -1,0 +1,69 @@
+.body {
+    background-color: #0a0a0a;
+    background-image: url(https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.presentacion {
+    h1 {
+        color:white;
+        font-size: 42px;
+    }
+    h2 {
+        color: white;
+        font-size: 32px;
+    }
+}
+.perfil {
+    color: white;
+    font-size: 22px;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    justify-items: left;
+    padding:20px;
+    border-radius: 1rem;
+    background-color: rgba(128, 128, 128, 0.2);
+    backdrop-filter: blur(12px);
+}
+main {
+    justify-content: center;
+    align-items: center;
+}
+.botones {
+    gap: 1rem;
+    margin-inline: 30rem;
+}
+button {
+    background-color: rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    border: none;
+    cursor:default;
+}
+.imagen {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    img {
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+.ambos {
+    display:flex;
+    .iz {
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+button:hover {
+    transition: all 300ms;
+    background-color: rgba(7, 7, 195, 0.5)
+}
