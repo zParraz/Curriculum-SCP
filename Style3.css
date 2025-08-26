@@ -1,33 +1,58 @@
 .ti {
+    /* Alinea el texto dentro del elemento horizontalmente al centro. */
     text-align: center;
+    /* Centra los elementos hijos a lo largo del eje principal (horizontal). */
     justify-content: center;
+    /* Centra los elementos hijos a lo largo del eje transversal (vertical). */
     align-items: center;
 }
+
 .trabajos {
+    /* Establece un color de fondo semitransparente. */
     background-color: rgba(86, 82, 82, 0.3);
+    /* Aplica un efecto de desenfoque al fondo detrás de este elemento para dar un efecto de vidrio esmerilado. */
     backdrop-filter: blur(12px);
+    /* Añade un relleno de 1rem (aproximadamente 16px) en todos los lados del elemento. */
     padding: 1rem;
+    /* Convierte el contenedor en un flexbox, permitiendo alinear y distribuir sus elementos hijos. */
     display: flex;
+    /* Establece el espacio entre los elementos hijos a 39rem, creando una gran separación entre ellos. */
     gap: 39rem;
 }
+
 body {
+    /* Establece el color de fondo de toda la página en un tono muy oscuro. */
     background-color: #0a0a0a;
+    /* Define una imagen de fondo para la página. */
     background-image: url(Images/fondo.jpeg);
+    /* Ajusta la imagen de fondo para que se adapte al tamaño del contenedor sin recortarla. */
     background-size: contain;
 }
+
+/* El selector universal '*' aplica los estilos a todos los elementos del documento. */
 * {
-    color:white;
+    /* Establece el color de texto en blanco para todos los elementos, a menos que se sobrescriba. */
+    color: white;
 }
 
 .si {
-    flex-direction:column;
+    /* Organiza los elementos hijos en una columna. */
+    flex-direction: column;
+    /* Establece un color de fondo gris semitransparente. */
     background-color: rgba(86, 82, 82, 0.3);
+    /* Aplica un efecto de desenfoque al fondo con un valor de 6px. */
     backdrop-filter: blur(6px);
+    /* Alinea el texto al centro. */
     text-align: center;
+    /* Añade un margen de 1rem en la parte superior del elemento. */
     margin-top: 1rem;
+    /* Redondea las esquinas del contenedor con un radio de 1rem. */
     border-radius: 1rem;
+    /* Añade un relleno de 1rem alrededor del contenido. */
     padding: 1rem;
+    /* Estilos para las etiquetas de imagen dentro de .si. */
     img {
+        /* Redondea las esquinas de las imágenes con un radio de 1rem. */
         border-radius: 1rem;
     }
 }

@@ -3,121 +3,189 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
 header {
-    display: contents;
-    color: white;
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
+    /* Define un contenedor con contenido flexible y lo expande a su elemento padre */
+    display: contents; 
+    /* Establece el color del texto en blanco */
+    color: white; 
+    /* Alinea el texto al centro */
+    text-align: center; 
+    /* Centra el elemento horizontal y verticalmente dentro de su contenedor */
+    margin: auto; 
+    /* Añade un relleno de 2rem (aproximadamente 32px) alrededor del contenido */
+    padding: 2rem; 
 
     .iz {
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 1rem;
-        flex-direction: column;
-        width: 50%;
+        /* Centra el elemento en el eje vertical (arriba y abajo) */
+        margin-top: auto; 
+        /* Centra el elemento en el eje vertical (arriba y abajo) */
+        margin-bottom: auto; 
+        /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+        padding: 1rem; 
+        /* Define los elementos dentro de este contenedor para que se apilen verticalmente */
+        flex-direction: column; 
+        /* Establece el ancho del contenedor al 50% de su elemento padre */
+        width: 50%; 
     }
 
     .de {
-        padding: 1rem;
-        flex-direction: column;
-        width: 50%;
+        /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+        padding: 1rem; 
+        /* Define los elementos dentro de este contenedor para que se apilen verticalmente */
+        flex-direction: column; 
+        /* Establece el ancho del contenedor al 50% de su elemento padre */
+        width: 50%; 
     }
 }
 
 #imagen {
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 255, 0.2);
-    box-shadow: 4px 4px 5px black;
-    margin: auto;
+    /* Redondea las esquinas de la imagen con un radio de 20 píxeles */
+    border-radius: 20px; 
+    /* Añade un borde de 1 píxel, sólido y de color azul con una transparencia del 20% */
+    border: 1px solid rgba(0, 0, 255, 0.2); 
+    /* Agrega una sombra a la caja de la imagen con un desplazamiento de 4px en X, 4px en Y, 5px de desenfoque y de color negro */
+    box-shadow: 4px 4px 5px black; 
+    /* Centra la imagen horizontal y verticalmente */
+    margin: auto; 
 }
+
 #home {
-    background-color: rgba(86, 82, 82, 0.3);
-    padding: 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
+    /* Establece el color de fondo con un tono gris oscuro y una transparencia del 30% */
+    background-color: rgba(86, 82, 82, 0.3); 
+    /* Añade un relleno de 10 píxeles alrededor del contenido */
+    padding: 10px; 
+    /* Redondea las esquinas del elemento con un radio de 10 píxeles */
+    border-radius: 10px; 
+    /* Aplica un efecto de desenfoque (blur) al fondo detrás del elemento con un radio de 6 píxeles */
+    backdrop-filter: blur(6px); 
 }
+
 main {
-    display: flex;
-    background-color: #0a0a0a;
-    background-image: url(Images/fondo.jpeg);
-    opacity: 1;
-    background-repeat: no-repeat;
-    flex-direction: row;
-    padding: 2rem;
-    margin: auto;
-    width: 90%;
+    /* Define un contenedor flexible, lo que permite alinear y distribuir el espacio entre sus elementos secundarios */
+    display: flex; 
+    /* Establece el color de fondo en un tono de gris muy oscuro */
+    background-color: #0a0a0a; 
+    /* Carga una imagen como fondo del contenedor */
+    background-image: url(Images/fondo.jpeg); 
+    /* Hace que el elemento sea completamente opaco (sin transparencia) */
+    opacity: 1; 
+    /* Evita que la imagen de fondo se repita */
+    background-repeat: no-repeat; 
+    /* Organiza los elementos secundarios del contenedor flexible en una fila */
+    flex-direction: row; 
+    /* Añade un relleno de 2rem (aproximadamente 32px) alrededor del contenido */
+    padding: 2rem; 
+    /* Centra el contenedor horizontal y verticalmente */
+    margin: auto; 
+    /* Establece el ancho del contenedor al 90% de su elemento padre */
+    width: 90%; 
 }
 
 article {
-    display: flex;
-    border-radius: 20px;
+    /* Define un contenedor flexible, lo que permite alinear y distribuir el espacio entre sus elementos secundarios */
+    display: flex; 
+    /* Redondea las esquinas del elemento con un radio de 20 píxeles */
+    border-radius: 20px; 
 
     .izquierda {
-        flex-direction: column;
-        padding: 1rem;
-        text-align: left;
-        width: 30%;
-        background-color: rgba(23, 23, 26, 0.7);
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        /* Define los elementos dentro de este contenedor para que se apilen verticalmente */
+        flex-direction: column; 
+        /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+        padding: 1rem; 
+        /* Alinea el texto a la izquierda */
+        text-align: left; 
+        /* Establece el ancho del contenedor al 30% de su elemento padre */
+        width: 30%; 
+        /* Establece el color de fondo en un tono de gris muy oscuro con una transparencia del 70% */
+        background-color: rgba(23, 23, 26, 0.7); 
+        /* Redondea solo la esquina superior izquierda */
+        border-top-left-radius: 20px; 
+        /* Redondea solo la esquina inferior izquierda */
+        border-bottom-left-radius: 20px; 
     }
 
     .derecha {
-        flex-direction: column;
-        padding: 1rem;
-        text-align: left;
-        width: 70%;
-        display: flex;
-        padding: 1rem;
-        background-color: rgba(6, 6, 8, 0.7);
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        /* Define los elementos dentro de este contenedor para que se apilen verticalmente */
+        flex-direction: column; 
+        /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+        padding: 1rem; 
+        /* Alinea el texto a la izquierda */
+        text-align: left; 
+        /* Establece el ancho del contenedor al 70% de su elemento padre */
+        width: 70%; 
+        /* Define un contenedor flexible para alinear y distribuir sus elementos secundarios */
+        display: flex; 
+        /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+        padding: 1rem; 
+        /* Establece el color de fondo en un tono de gris muy oscuro con una transparencia del 70% */
+        background-color: rgba(6, 6, 8, 0.7); 
+        /* Redondea solo la esquina superior derecha */
+        border-top-right-radius: 20px; 
+        /* Redondea solo la esquina inferior derecha */
+        border-bottom-right-radius: 20px; 
     }
 }
 
 body {
-    background-color: #0a0a0a;
+    /* Establece el color de fondo de toda la página en un tono de gris muy oscuro */
+    background-color: #0a0a0a; 
 }
 
 .sectitle {
-    font-size: 35px;
-    color: white;
+    /* Establece el tamaño de la fuente en 35 píxeles */
+    font-size: 35px; 
+    /* Establece el color del texto en blanco */
+    color: white; 
 }
 
-
 ul {
-    font-size: 25px;
-    color: white;
+    /* Establece el tamaño de la fuente de los elementos de la lista en 25 píxeles */
+    font-size: 25px; 
+    /* Establece el color del texto de la lista en blanco */
+    color: white; 
 }
 
 h2 {
-    font-size: 30px;
-    color: white;
+    /* Establece el tamaño de la fuente de los títulos h2 en 30 píxeles */
+    font-size: 30px; 
+    /* Establece el color del texto de los títulos h2 en blanco */
+    color: white; 
 }
 
 .perfil {
-    font-size: 35px;
-    color: white;
+    /* Establece el tamaño de la fuente del texto con la clase 'perfil' en 35 píxeles */
+    font-size: 35px; 
+    /* Establece el color del texto con la clase 'perfil' en blanco */
+    color: white; 
 }
 
 .ref {
-    font-size: 25px;
-    color: white;
+    /* Establece el tamaño de la fuente del texto con la clase 'ref' en 25 píxeles */
+    font-size: 25px; 
+    /* Establece el color del texto con la clase 'ref' en blanco */
+    color: white; 
 }
 
 .fam {
-    font-size: 25px;
-    color: white;
+    /* Establece el tamaño de la fuente del texto con la clase 'fam' en 25 píxeles */
+    font-size: 25px; 
+    /* Establece el color del texto con la clase 'fam' en blanco */
+    color: white; 
 }
 
 .referencias {
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    backdrop-filter: blur(12px);
+    /* Añade un relleno de 0.5rem (aprox. 8px) en la parte superior/inferior y 1rem (aprox. 16px) en los lados */
+    padding: 0.5rem 1rem; 
+    /* Redondea las esquinas del elemento con un radio de 10 píxeles */
+    border-radius: 10px; 
+    /* Aplica un efecto de desenfoque al fondo detrás del elemento con un radio de 12 píxeles */
+    backdrop-filter: blur(12px); 
 }
 
 .superior {
-    padding: 1rem;
-    border-radius: 10px;
-    backdrop-filter: blur(12px);
+    /* Añade un relleno de 1rem (aproximadamente 16px) alrededor del contenido */
+    padding: 1rem; 
+    /* Redondea las esquinas del elemento con un radio de 10 píxeles */
+    border-radius: 10px; 
+    /* Aplica un efecto de desenfoque al fondo detrás del elemento con un radio de 12 píxeles */
+    backdrop-filter: blur(12px); 
 }

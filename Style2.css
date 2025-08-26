@@ -1,69 +1,129 @@
+/* Estilos para el cuerpo de la página (<body>) */
 .body {
+    /* Establece el color de fondo en un tono de gris muy oscuro. */
     background-color: #0a0a0a;
+    /* Carga una imagen como fondo de la página. */
     background-image: url(Images/fondo.jpeg);
+    /* Evita que la imagen de fondo se repita. */
     background-repeat: no-repeat;
+    /* Asegura que la imagen de fondo cubra toda el área del cuerpo, sin importar el tamaño de la ventana. */
     background-size: cover;
-    
 }
+
+/* Estilos para el contenedor de la presentación */
 .presentacion {
+    /* Estilos para los títulos <h1> dentro de .presentacion */
     h1 {
-        color:white;
+        /* Establece el color del texto en blanco. */
+        color: white;
+        /* Define el tamaño de la fuente en 42 píxeles. */
         font-size: 42px;
     }
+    /* Estilos para los títulos <h2> dentro de .presentacion */
     h2 {
+        /* Establece el color del texto en blanco. */
         color: white;
+        /* Define el tamaño de la fuente en 32 píxeles. */
         font-size: 32px;
     }
 }
+
+/* Estilos para el texto de perfil */
 .perfil {
+    /* Establece el color del texto en blanco. */
     color: white;
+    /* Define el tamaño de la fuente en 22 píxeles. */
     font-size: 22px;
 }
+
+/* Estilos para el contenedor principal */
 .principal {
+    /* Define un contenedor flexible, permitiendo alinear y distribuir sus elementos. */
     display: flex;
+    /* Organiza los elementos secundarios del contenedor flexible en una columna. */
     flex-direction: column;
+    /* Añade un margen de 10rem (aprox. 160px) en la parte superior. */
     margin-top: 10rem;
+    /* Alinea los elementos a la izquierda. */
     justify-items: left;
-    padding:20px;
+    /* Añade un relleno de 20 píxeles alrededor del contenido. */
+    padding: 20px;
+    /* Redondea las esquinas del elemento con un radio de 1rem (aprox. 16px). */
     border-radius: 1rem;
+    /* Establece un color de fondo gris con una transparencia del 20%. */
     background-color: rgba(128, 128, 128, 0.2);
+    /* Aplica un efecto de desenfoque al fondo detrás del elemento con un radio de 12 píxeles. */
     backdrop-filter: blur(12px);
 }
+
+/* Estilos para el elemento <main> */
 main {
+    /* Centra el contenido horizontalmente dentro del contenedor flexible. */
     justify-content: center;
+    /* Centra el contenido verticalmente dentro del contenedor flexible. */
     align-items: center;
 }
+
+/* Estilos para el contenedor de botones */
 .botones {
+    /* Define un espacio entre los elementos del contenedor de 1rem (aprox. 16px). */
     gap: 1rem;
+    /* Añade un margen de 30rem (aprox. 480px) a la izquierda y derecha. */
     margin-inline: 30rem;
 }
+
+/* Estilos para los botones */
 button {
+    /* Establece un color de fondo azul con una transparencia del 50%. */
     background-color: rgba(0, 0, 255, 0.5);
+    /* Aplica un efecto de desenfoque al fondo detrás del elemento con un radio de 10 píxeles. */
     backdrop-filter: blur(10px);
+    /* Redondea las esquinas del botón con un radio de 10 píxeles. */
     border-radius: 10px;
+    /* Añade un relleno de 1rem (aprox. 16px) alrededor del contenido. */
     padding: 1rem;
+    /* Establece el color del texto en blanco. */
     color: white;
+    /* Elimina el borde predeterminado del botón. */
     border: none;
-    cursor:default;
+    /* Cambia el cursor del mouse a un puntero predeterminado (flecha), indicando que no es interactivo. */
+    cursor: default;
 }
+
+/* Estilos para el contenedor de la imagen */
 .imagen {
+    /* Define un contenedor flexible. */
     display: flex;
+    /* Alinea los elementos a la derecha dentro del contenedor. */
     justify-content: right;
+    /* Añade un relleno de 10 píxeles alrededor del contenido. */
     padding: 10px;
+    /* Estilos para la imagen <img> dentro de .imagen */
     img {
+        /* Redondea las esquinas de la imagen con un radio de 10 píxeles. */
         border-radius: 10px;
+        /* Agrega una sombra a la caja de la imagen con un desplazamiento de 5px en X, 5px en Y, 5px de desenfoque, 3px de extensión y de color negro con una transparencia del 50%. */
         box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);
     }
 }
+
+/* Estilos para el contenedor 'ambos' */
 .ambos {
-    display:flex;
+    /* Define un contenedor flexible. */
+    display: flex;
+    /* Estilos para el elemento .iz (izquierda) dentro de .ambos */
     .iz {
+        /* Redondea las esquinas del elemento con un radio de 10 píxeles. */
         border-radius: 10px;
+        /* Añade un relleno de 1rem (aprox. 16px) alrededor del contenido. */
         padding: 1rem;
     }
 }
 
+/* Estilos que se aplican al pasar el mouse por encima del botón */
 button:hover {
+    /* Define una transición suave para todas las propiedades CSS durante 300 milisegundos. */
     transition: all 300ms;
-    background-color: rgba(7, 7, 195, 0.5)
+    /* Cambia el color de fondo a un azul oscuro con una transparencia del 50%. */
+    background-color: rgba(7, 7, 195, 0.5);
 }
