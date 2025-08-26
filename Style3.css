@@ -12,7 +12,7 @@
 }
 body {
     background-color: #0a0a0a;
-    background-image: url(https://images.pexels.com/photos/2387819/pexels-photo-2387819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(Images/fondo.jpeg);
     background-size: contain;
 }
 * {
